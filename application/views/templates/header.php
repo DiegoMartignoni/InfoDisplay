@@ -29,6 +29,6 @@
         </ul>
       </div>
     </nav>
-    
-    <div class="d-flex justify-content-center w-100 h-100">
-    	<div class="align-self-center container jumbotron">
+
+    <div class="d-flex justify-content-center mt-4">
+    	<div class="align-self-center container">
