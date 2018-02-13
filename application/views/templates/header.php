@@ -1,11 +1,15 @@
+<?php
+  $cookie = 1;
+  setcookie ("messaggio", $cookie, time() + (86400 * 7));
+?>
 <html class="w-100 h-100">
-<!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <title>CodeIgniter Tutorial</title>
   </head>
   <body class="w-100 h-100 text-center">
@@ -18,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="<?php echo base_url();?>">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="<?php echo base_url();?>">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>about">About</a>
