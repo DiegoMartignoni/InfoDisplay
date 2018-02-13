@@ -30,6 +30,9 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>posts">Annunci</a>
           </li>
+          <li class="nav-item d-flex justify-content-center align-items-center ml-2">
+            <a class="nav-link p-0" href="<?php echo base_url();?>posts/create"><span class="btn bg-white text-secondary btn-sm">Nuovo</span></a>
+          </li>
         </ul>
       </div>
     </nav>

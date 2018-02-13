@@ -24,8 +24,16 @@ class Posts extends CI_Controller {
 
   public function create()
   {
-    $this->load->view('templates/header');
-    $this->load->view('posts/create');
-    $this->load->view('templates/footer');
+    $this->form_validation->set_rules('titolo', 'Titolo', 'required');
+    $this->form_validation->set_rules('corpo', 'Corpo', 'required');
+
+    if ($this->form_validation->run() === false) {
+      $this->load->view('templates/header');
+      $this->load->view('posts/create');
+      $this->load->view('templates/footer');
+    } else {
+      $this->Post_model->create_post();
+      redirect('posts');
+    }
   }
 }
