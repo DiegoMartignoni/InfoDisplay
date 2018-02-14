@@ -6,6 +6,7 @@
 
         public function get_posts($slug = false){
         	if($slug === false){
+							$this->db->order_by('idAnnuncio', 'DESC');
             	$query = $this->db->get('posts');
                 return $query->result_array();
             }
