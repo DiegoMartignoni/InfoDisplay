@@ -36,4 +36,10 @@ class Posts extends CI_Controller {
       redirect('posts');
     }
   }
+
+  public function delete($id)
+  {
+    $this->Post_model->delete_post($id);
+    redirect('posts');
+  }
 }

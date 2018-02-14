@@ -26,4 +26,10 @@
 
 					return $this->db->insert('CiAnnunci', $data);
         }
+
+				public function delete_post($id){
+        	$this->db->where('idAnnuncio', $id);
+					$this->db->delete('CiAnnunci');
+					return true;
+        }
     }
