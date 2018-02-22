@@ -11,6 +11,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <title>CodeIgniter Tutorial</title>
+    <script>
+      function NomeFile(){
+        var nome = document.getElementById('inputfile').value.split( '\\' ).pop();;
+        alert('Selected file: ' + document.getElementById('inputfile').value);
+        document.getElementById('file').innerHTML = nome;
+      }
+    </script>
   </head>
   <body class="w-100 h-100 text-center">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,6 +36,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>posts">Annunci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url();?>upload">Upload</a>
           </li>
           <li class="nav-item d-flex justify-content-center align-items-center ml-2">
             <a class="nav-link p-0" href="<?php echo base_url();?>posts/create"><span class="btn bg-white text-secondary btn-sm">Nuovo</span></a>
