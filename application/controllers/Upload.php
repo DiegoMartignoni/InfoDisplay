@@ -12,8 +12,15 @@
 
         public function index()
         {
+          $data['images'] = $this->Image_model->get_image();
+          if (empty($data['images'])) {
+            show_404();
+          }
+          $data['error'] = '';
+
+          //array('error' => '' )
           $this->load->view('templates/header');
-        	$this->load->view('upload/index', array('error' => '' ));
+        	$this->load->view('upload/index', $data);
           $this->load->view('templates/footer');
         }
 
@@ -30,11 +37,17 @@
                 if ( ! $this->upload->do_upload('userfile'))
                 {
 
+                    $data['images'] = $this->Image_model->get_image();
+                    if (empty($data['images'])) {
+                      show_404();
+                    }
+                    $data['error'] = $this->upload->display_errors();
+
                     $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
 
-                    $error = array('error' => $this->upload->display_errors());
+
                     $this->load->view('templates/header');
-                    $this->load->view('upload/index', $error);
+                    $this->load->view('upload/index', $data);
                     $this->load->view('templates/footer');
                 }
                 else
