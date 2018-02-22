@@ -15,13 +15,18 @@
 </label>
 <input class="btn btn-lg btn-success font-weight-bold" id="upload" type="submit" value="Carica" />
 </form>
-<br>
-<?php foreach ($images as $image) : ?>
-  <div class="col-md-4">
-    <div class="container jumbotron" style="width: 18rem;">
-      <small><?php echo $image['nome']?></small>
-      <h6><strong><?php echo $image['path']?></strong></h6>
-      <small><?php echo "Larghezza: ".$image['larghezza']." - Altezza: ". $image['altezza']?></small>
-    </div>
+
+<h1>Immagini</h1>
+<div class="container mt-4">
+  <div class="row">
+    <?php foreach ($images as $image) : ?>
+      <div class="col-md-4">
+        <div class="container jumbotron" style="width: 18rem;">
+          <small><?php echo $image['nome']?></small>
+          <h6><strong><?php echo $image['path']?></strong></h6>
+          <small><?php echo "Larghezza: ".$image['larghezza']." - Altezza: ". $image['altezza']?></small>
+        </div>
+      </div>
+    <?php endforeach; ?>
   </div>
-<?php endforeach; ?>
+</div>

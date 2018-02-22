@@ -52,10 +52,12 @@
                 }
                 else
                 {
-                    $data = array('upload_data' => $this->upload->data());
+                    $dataImage = array('upload_data' => $this->upload->data());
                     $this->load->view('templates/header');
-                    $this->load->view('upload/success', $data);
+                    $this->load->view('upload/success', $dataImage);
                     $this->load->view('templates/footer');
+                    $this->Image_model->upload_image();
+                    redirect('upload');
 
                 }
         }
