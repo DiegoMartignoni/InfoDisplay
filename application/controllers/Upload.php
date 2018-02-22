@@ -13,9 +13,6 @@
         public function index()
         {
           $data['images'] = $this->Image_model->get_image();
-          if (empty($data['images'])) {
-            show_404();
-          }
           $data['error'] = '';
 
           //array('error' => '' )
