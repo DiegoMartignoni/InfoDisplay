@@ -13,7 +13,7 @@
         public function index()
         {
           $this->load->view('templates/header');
-        	$this->load->view('upload/index', array('error' => ' ' ));
+        	$this->load->view('upload/index', array('error' => '' ));
           $this->load->view('templates/footer');
         }
 
@@ -34,7 +34,7 @@
 
                     $error = array('error' => $this->upload->display_errors());
                     $this->load->view('templates/header');
-                    $this->load->view('upload/error', $error);
+                    $this->load->view('upload/index', $error);
                     $this->load->view('templates/footer');
                 }
                 else
