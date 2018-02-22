@@ -13,9 +13,8 @@
     <title>CodeIgniter Tutorial</title>
     <script>
       function NomeFile(){
-        var nome = document.getElementById('userfile').value.split( '\\' ).pop();;
-        alert('Selected file: ' + document.getElementById('userfile').value);
-        document.getElementById('upload').value = nome;
+        var nome = document.getElementById('userfile').value.split( '\\' ).pop();
+        document.getElementById('qualeFile').innerHTML = "<a class='btn btn-secondary btn-lg mt-2' style='border-top-left-radius: 0px; border-bottom-left-radius: 0px;''>"+nome+"</a>";
       }
     </script>
   </head>

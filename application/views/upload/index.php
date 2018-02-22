@@ -10,10 +10,13 @@
 
   echo form_open_multipart('upload/upload_file');
  ?>
-<label class="btn btn-lg bg-white text-dark btn-file mb-0 " id="file">
+<label class="btn btn-lg bg-white text-dark btn-file mb-0 mt-2 mr-0" id="file" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
   Scegli il file<input class="btn btn-secondary" id="userfile" type="file" name="userfile" size="20" hidden onchange="NomeFile()"/>
 </label>
-<input class="btn btn-lg btn-success font-weight-bold" id="upload" type="submit" value="Carica" />
+<span id="qualeFile">
+  <a class='btn btn-secondary btn-lg mt-2' style='border-top-left-radius: 0px; border-bottom-left-radius: 0px;'>Vuoto</a>
+</span>
+<input class="btn btn-lg btn-success font-weight-bold mt-2 ml-2" id="upload" type="submit" value="Carica" />
 </form>
 
 <h1>Immagini</h1>
@@ -22,9 +25,9 @@
     <?php foreach ($images as $image) : ?>
       <div class="col-md-4">
         <div class="container jumbotron" style="width: 18rem;">
-          <small><?php echo $image['nome']?></small>
-          <h6><strong><?php echo $image['path']?></strong></h6>
+          <h2><strong><?php echo $image['nome']?></strong></h2>
           <small><?php echo "Larghezza: ".$image['larghezza']." - Altezza: ". $image['altezza']?></small>
+           <img src="<?php echo base_url().'uploads/'.$image['nome']; ?>" alt="<?php echo $image['nome']?>" class="img-thumbnail mt-2">
         </div>
       </div>
     <?php endforeach; ?>

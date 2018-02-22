@@ -25,9 +25,9 @@
         {
                 $config['upload_path']          = './uploads/';
                 $config['allowed_types']        = 'gif|jpg|png|pdf|doc';
-                $config['max_size']             = 2000;
-                $config['max_width']            = 1920;
-                $config['max_height']           = 1080;
+                $config['max_size']             = 5000;
+                $config['max_width']            = 3840;
+                $config['max_height']           = 2160;
 
                 $this->load->library('upload', $config);
 
