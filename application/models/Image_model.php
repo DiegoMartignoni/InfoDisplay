@@ -4,8 +4,14 @@
         	$this->load->database();
         }
 
-        public function get_image($slug = false){
+        public function get_images($slug = false){
 			     $this->db->order_by('idImmagine', 'DESC');
+        	 $query = $this->db->get('images');
+            return $query->result_array();
+        }
+
+				public function get_image($id){
+			     $this->db->where('idImmagine', $id);
         	 $query = $this->db->get('images');
             return $query->result_array();
         }
@@ -26,6 +32,15 @@
 					$this->db->where('nome', $nome);
 					$this->db->delete('images');
 					return true;
+				}
+
+				public function is_image($id){
+					$this->db->where('idImmagine', $id);
+					$query = $this->db->get('images');
+					if(empty($query->result_array()))
+						return false;
+					else
+						return $query->result_array();
 				}
 
     }

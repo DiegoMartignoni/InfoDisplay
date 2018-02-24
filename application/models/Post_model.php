@@ -32,4 +32,14 @@
 					$this->db->delete('posts');
 					return true;
         }
+
+				public function link_post_image($id, $idNULL = ''){
+					if($idNULL === 'NULL')
+						$this->db->set('idImmagine', $idNULL);
+					else
+						$this->db->set('idImmagine', $this->input->post('idImmagine'));
+					$this->db->where('idAnnuncio', $id);
+					$this->db->update('posts'); // gives UPDATE `mytable` SET `field` = 'field+1' WHERE `id` = 2
+					return true;
+				}
     }

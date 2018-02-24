@@ -16,6 +16,16 @@ class Posts extends CI_Controller {
     if (empty($data['post'])) {
       show_404();
     }
+    $data['images'] = $this->Image_model->get_images();
+    if($this->Image_model->is_image($data['post']['idImmagine']) != false){
+      $i = $this->Image_model->get_image($data['post']['idImmagine']);
+      $data['image'] = $i['0'];
+    } else {
+      $i = array('0' => array('nome' => 'Vuoto', ), );
+      $data['image'] = $i['0'];
+      $this->Post_model->link_post_image($data['post']['idAnnuncio'], 'NULL');
+    }
+
     $data['titolo'] = $data['post']['titolo'];
     $this->load->view('templates/header');
     $this->load->view('posts/view', $data);
@@ -40,6 +50,12 @@ class Posts extends CI_Controller {
   public function delete($id)
   {
     $this->Post_model->delete_post($id);
+    redirect('posts');
+  }
+
+  public function link($id)
+  {
+    $this->Post_model->link_post_image($id);
     redirect('posts');
   }
 }

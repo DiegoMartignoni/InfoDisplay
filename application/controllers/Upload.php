@@ -12,7 +12,7 @@
 
         public function index()
         {
-          $data['images'] = $this->Image_model->get_image();
+          $data['images'] = $this->Image_model->get_images();
           $data['error'] = '';
 
           //array('error' => '' )
@@ -34,7 +34,7 @@
                 if ( ! $this->upload->do_upload('userfile'))
                 {
 
-                    $data['images'] = $this->Image_model->get_image();
+                    $data['images'] = $this->Image_model->get_images();
                     if (empty($data['images'])) {
                       show_404();
                     }
