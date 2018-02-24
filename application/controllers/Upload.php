@@ -58,4 +58,16 @@
 
                 }
         }
+
+        public function delete($nome)
+        {
+          $file = './uploads/'.$nome;
+          $data = $file;
+          if(file_exists($file)){
+            chmod($file, 0644);
+            unlink($file);
+          }
+          $this->Image_model->delete_image($nome);
+          redirect('upload');
+        }
 }

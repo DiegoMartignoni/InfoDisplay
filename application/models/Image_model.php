@@ -22,4 +22,10 @@
 					return $this->db->insert('images', $uploadData);
         }
 
+				public function delete_image($nome){
+					$this->db->where('nome', $nome);
+					$this->db->delete('images');
+					return true;
+				}
+
     }

@@ -27,7 +27,10 @@
         <div class="container jumbotron" style="width: 18rem;">
           <h2><strong><?php echo $image['nome']?></strong></h2>
           <small><?php echo "Larghezza: ".$image['larghezza']." - Altezza: ". $image['altezza']?></small>
-           <img src="<?php echo base_url().'uploads/'.$image['nome']; ?>" alt="<?php echo $image['nome']?>" class="img-thumbnail mt-2">
+          <img src="<?php echo base_url().'uploads/'.$image['nome']; ?>" alt="<?php echo $image['nome']?>" class="img-thumbnail mt-2 mb-2">
+          <?php echo form_open('upload/delete/'.$image['nome']); ?>
+            <input type="submit" value="Elimina" class="btn btn-danger">
+          </form>
         </div>
       </div>
     <?php endforeach; ?>
