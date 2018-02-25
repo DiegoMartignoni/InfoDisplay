@@ -6,12 +6,11 @@
 Benvenuto nella documentazione di InfoDisplay!
 ==============================================
 
-.. image:: /images/benvenuto.jpg
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   Introduzione
 
 
 Indice e tabelle
