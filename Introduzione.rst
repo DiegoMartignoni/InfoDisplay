@@ -31,11 +31,8 @@ Creazione e personalizzazione Slides
 presentazione preimpostate riguardanti le attività elencate nella
 tabella. Nel dettaglio:
 
--  Sezione per la creazione, editing e rimozione
-delle Slides, costituite dal testo effetivo da inserire nelle slide
-(Titolo e copro)
--  Sezione per il caricamento di immagini, da poter
-legare alle Slides già esistenti (o da inserire nella Galleria Immagini)
+-  Sezione per la creazione, editing e rimozione delle Slides, costituite dal testo effetivo da inserire nelle slide (Titolo e copro)
+-  Sezione per il caricamento di immagini, da poter legare alle Slides già esistenti (o da inserire nella Galleria Immagini)
 
 Gestione ruoli
 ~~~~~~~~~~~~~~
@@ -44,5 +41,4 @@ Gestione ruoli
 scuola di collaborare al miglioramento del sistema informativo, nel
 dettaglio:
 
--  Sezione per la gestione degli utenti, con relativi
-permessi per Amministratori e Collaboratori
+-  Sezione per la gestione degli utenti, con relativi permessi per Amministratori e Collaboratori
