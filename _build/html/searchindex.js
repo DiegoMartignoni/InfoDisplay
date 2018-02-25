@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:53,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{cerc:0,indic:[],modul:0},titles:["Benvenuto nella documentazione di InfoDisplay!"],titleterms:{and:[],benven:0,document:0,documentation:[],indic:0,indices:[],infodisplay:0,tabell:0,tables:[],welcom:[]}})
