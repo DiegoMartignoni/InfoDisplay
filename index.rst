@@ -8,14 +8,6 @@ Benvenuto nella documentazione di InfoDisplay!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Indice:
 
    Introduzione
-
-
-Indice e tabelle
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
