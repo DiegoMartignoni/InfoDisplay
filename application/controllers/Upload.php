@@ -25,7 +25,7 @@
         {
                 $config['upload_path']          = './uploads/';
                 $config['allowed_types']        = 'gif|jpg|png|pdf|doc';
-                $config['max_size']             = 5000;
+                $config['max_size']             = 0;
                 $config['max_width']            = 3840;
                 $config['max_height']           = 2160;
 
