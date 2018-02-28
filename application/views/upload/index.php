@@ -1,6 +1,6 @@
 <?php
   if($_COOKIE['messaggio']==1){
-    echo '<div style="padding: 5px;"><div id="inner-message" class="alert alert-dismissible alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <strong>Suggerimento:</strong> Dopo aver scelto il file, per caricare <a href="#salva" class="alert-link" style="text-decoration:none">clicca sul bottone <kbd class="bg-white text-success">Carica</kbd></a></div></div>';
+    echo '<div style="padding: 5px;"><div id="inner-message" class="alert alert-dismissible alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button> <strong>Suggerimento:</strong> Dopo aver scelto il file, per caricare <a href="#upload" class="alert-link" style="text-decoration:none">clicca sul bottone <kbd class="bg-white text-success">Carica</kbd></a></div></div>';
     $cookie = ++$_COOKIE['messaggio'];
     setcookie ("messaggio", $cookie, time() + (86400 * 7));
   }

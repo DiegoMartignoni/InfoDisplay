@@ -9,7 +9,7 @@
 
 
 <div class="container ">
-  <h1>Collegamenti: <span class="badge badge-secondary mr-2"><?php echo $image['nome'];?></span></h1>
+  <h1>Immagine collegata: <span class="badge badge-secondary mr-2"><?php echo $image['nome'];?></span></h1>
   <?php echo form_open('posts/link/'.$post['idAnnuncio']); ?>
   <div class="input-group mb-3 mt-4">
     <select class="custom-select" id="idImmagine" name="idImmagine">
