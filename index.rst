@@ -9,5 +9,6 @@ Benvenuto nella documentazione di InfoDisplay!
 .. toctree::
    :maxdepth: 2
    :caption: Indice:
+   Specifiche tecniche
 
    Introduzione
