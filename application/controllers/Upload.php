@@ -35,9 +35,6 @@
                 {
 
                     $data['images'] = $this->Image_model->get_images();
-                    if (empty($data['images'])) {
-                      show_404();
-                    }
                     $data['error'] = $this->upload->display_errors();
 
                     $this->form_validation->set_error_delimiters('<p class="error">', '</p>');
