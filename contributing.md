@@ -1,8 +1,8 @@
 ﻿# Lista delle attività in corso
 ## Legenda
-❄️ Breve durata, non è una Priorità.
-⚠️ Urgente, da realizzare al più presto.
-💤 Opzionale, non è una Priorità e non è per forza da realizzare.
+* ❄️ Breve durata, non è una Priorità.
+* ⚠️ Urgente, da realizzare al più presto.
+* 💤 Opzionale, non è una Priorità e non è per forza da realizzare.
 
 ## Generale
 | Completate | Da terminare | Dettagli |
