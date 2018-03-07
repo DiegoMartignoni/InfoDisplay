@@ -1,14 +1,11 @@
-﻿#Lista delle attività in corso
+﻿# Lista delle attività in corso
 
 ## Generale
-### Completate
-- Creata la documentazione per InfoDisplay
-- Creato il repository con relativo upload su GitHub (Licenza: MIT)
-- Utilizzo di un Framework per la corretta gestione del sistema
-
-### Da terminare
-- Creare una sezione HELP da assegnare agli utenti che desiderino avere suggerimenti riguardo al funzionamento
-- Gestire gli accessi al sito solo ad utenti verificati (Sessioni)
+| Completate | Da terminare |
+| ------ | ------ |
+| Creata la documentazione per InfoDisplay | Creare una sezione HELP da assegnare agli utenti che desiderino avere suggerimenti riguardo al funzionamento |
+| Creato il repository con relativo upload su GitHub (Licenza: MIT) | Gestire gli accessi al sito solo ad utenti verificati (Sessioni) |
+| Utilizzo di un Framework per la corretta gestione del sistema | |
 
 ## Attvità e Galleria Immagini
 ### Completate
