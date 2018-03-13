@@ -37,6 +37,9 @@
             <a class="nav-link" href="<?php echo base_url();?>posts">Annunci</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url();?>categories">Categorie</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>upload">Immagini</a>
           </li>
           <li class="nav-item d-flex justify-content-center align-items-center ml-2">

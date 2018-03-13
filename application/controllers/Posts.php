@@ -36,10 +36,11 @@ class Posts extends CI_Controller {
   {
     $this->form_validation->set_rules('titolo', 'Titolo', 'required');
     $this->form_validation->set_rules('corpo', 'Corpo', 'required');
+    $data['categories'] = $this->Category_model->get_categories();
 
     if ($this->form_validation->run() === false) {
       $this->load->view('templates/header');
-      $this->load->view('posts/create');
+      $this->load->view('posts/create', $data);
       $this->load->view('templates/footer');
     } else {
       $this->Post_model->create_post();
