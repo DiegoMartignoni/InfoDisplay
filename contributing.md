@@ -22,6 +22,7 @@
 | ------ | ------ | ------ |
 | Creata la sezione per inserire il testo delle slide | Creare la sezione di anteprima presentazione slide | ⚠️ |
 | Creata la sezione per caricare o eliminare le immagini | Permettere di modificare il testo di una slide già esistente | ❄️ 💤|
+| Creata la sezione categorie per una più corretta organizzazione dei post | | |
 
 ## Gestione ruoli
 ### Completate
