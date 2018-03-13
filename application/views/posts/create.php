@@ -14,12 +14,12 @@
   </div>
   <div class="jumbotron mt-2 mb-2 p-1 text-left">
     <h2>Seleziona una categoria</h2>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary active mr-4 rounded">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons" style="display: block;">
+      <label class="btn btn-secondary active mr-4 mt-2 rounded">
         <input type="radio" name="options" autocomplete="off" value="0"> ❌
       </label>
       <?php foreach ($categories as $category) {?>
-      <label class="btn btn-secondary mr-2 rounded">
+      <label class="btn btn-secondary mr-2 mt-2 rounded">
         <input type="radio" name="options" autocomplete="off" value="<?php echo $category['idCategoria']; ?>"> <?php echo $category['nome']; ?>
       </label>
       <?php } ?>
