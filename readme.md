@@ -1,7 +1,7 @@
 # InfoDisplay
 [![Documentation Status](https://readthedocs.org/projects/infodisplay/badge/?version=latest)](http://infodisplay.readthedocs.io/it/latest/?badge=latest)
 ## Link utili
-* [Altervista](http://diegomartignoni.altervista.org/ci/) - Esempio di pannello di controllo
+* [Altervista](https://diegomartignoni.altervista.org/ci/) - Esempio di pannello di controllo
 * [Git Hub](https://github.com/DiegoMartignoni/ci) - Codice della web application
 
 ## Cos'è InfoDisplay?
